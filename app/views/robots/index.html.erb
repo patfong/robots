@@ -1,0 +1,20 @@
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Position X</th>
+    <th>Position Y</th>
+    <th>Direction</th>
+    <th></th>
+  </tr>
+ 
+  <% @robots.each do |robot| %>
+      <%= robot.inspect %>
+    <tr>
+      <td><%= robot.id %></td>
+      <td><%= robot.direction %></td>
+      <td><%= robot.positionX %></td>
+      <td><%= robot.positionY %></td>
+      <td><%= link_to 'Show', robot_path(robot) %></td>
+    </tr>
+  <% end %>
+</table>

@@ -1,0 +1,19 @@
+<h1>New Robot</h1>
+
+<%= form_for :robot, url:robots_path do |f| %>
+  <p>
+    <%= f.label :positionX %><br>
+    <%= f.number_field :positionX %>
+  </p> 
+  <p>
+    <%= f.label :positionY %><br>
+    <%= f.number_field :positionY %>
+  </p>
+  <p>
+    <%= f.label :direction %><br>
+    <%= f.text_field :direction %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
